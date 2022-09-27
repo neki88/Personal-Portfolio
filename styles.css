@@ -1,0 +1,174 @@
+/*THEME*/
+:root {
+    --purple: #7e74f1;
+    --purple-light-1: #f5f3fe;
+    --purple-light-2: #eae6fe;
+    --cider: #232e35;
+    --cider-light: #656d72;
+    --light: #fbfbfb;
+    --light-1: #fbfbfb;
+    --light-2: #f1f1f1;
+    --light-3: #f5f5f5;
+    --light-4: #d9d9d9;
+    --white: #ffffff;
+
+}
+
+/*RESET CSS*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*GENERAL*/
+body{
+    font-size: 16px;
+    line-height: 28px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: var(--cider);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+
+/*START*/
+
+
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+    background-color: aquamarine;
+}
+
+.btn {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 16px 24px;
+    border-radius: 8px;
+    font-family: inherit;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.btn-outline-light {
+    border: 1px solid var(--light-2);
+}
+/*HEADER*/
+
+.header {
+    padding: 15px 0;    
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    margin-top: 25px;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    width: 114px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.header .nav .nav-links {
+    display: flex;
+    align-items: center;
+    line-height: 19px;
+}
+
+.header .nav .nav-links li:not(:last-of-type){
+    margin-right: 56px;
+}
+
+.header .right-content {
+    display: flex;
+    align-items: center;
+}
+
+.header .theme-color-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 32px;
+}
+
+.header .theme-color-toggle svg {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+
+/*MAIN*/
+
+.main {
+    height: 200vh;
+}
+
+
+
+@media screen and  (max-width: 768px) {
+    
+}
