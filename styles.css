@@ -92,7 +92,7 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 16px;
-    background-color: aquamarine;
+    border: 0.5px solid;
 }
 
 .btn {
@@ -120,7 +120,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 10;
     margin-top: 25px;
 }
-.header .container{
+.header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -166,6 +166,52 @@ h1, h2, h3, h4, h5, h6 {
 .main {
     height: 200vh;
 }
+
+/*HERO SECTION*/
+
+.hero-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hero-section .content {
+    flex-basis: 50%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sm-icons {
+    display: flex;
+    justify-content: space-between;
+}
+.hero-section .content svg {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    
+}
+
+
+.profil-pic {
+    height: 496px;
+    width: 545px;
+    background-color: chartreuse;
+    
+    flex-grow: 1;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
