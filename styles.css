@@ -93,6 +93,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
     padding: 0 16px;
     border: 0.5px solid;
+    background-color: #656d72;
 }
 
 .mb-16 {
@@ -122,14 +123,27 @@ margin-bottom: 16px;
 
 
 .above-title {
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 24px;
     letter-spacing: 7.5px;
+    text-transform: uppercase;
+    padding-left: 32px;
+    position: relative;
     columns: var(--cider-light);
+    display: inline-block;
     
+}
+
+.above-title::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 16px;
+    height: 2px;
+    background-color: var(--light-4);
 }
 
 .social-icons {
@@ -204,22 +218,17 @@ margin-bottom: 16px;
 
 /*HERO SECTION*/
 
-.hero-section {
+.hero-section .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 181px;
     
 }
-.hero-section .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .hero-section .content {
     padding-top: 64px;
-    background-color: brown;
+    
 }
 
 .hero-section .content .full-name {
@@ -252,6 +261,15 @@ margin-bottom: 16px;
     border-radius: 16px 16px 16px 20px;
 }
 
+.hero-section .image .cover svg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 199px;
+    height: 210px;
+    border-top-right-radius: 16px;
+}
+
 .hero-section .image .cover::after {
     content: '';
     position: absolute;
@@ -264,14 +282,14 @@ margin-bottom: 16px;
     transform: rotate(350deg);
 }
 
-.hero-section .image .cover svg {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 199px;
-    height: 210px;
-    border-top-right-radius: 16px;
+.hero-section .image .avatar {
+    position: relative;
+    left: 0;
+    top: 103px;
+    border-bottom-left-radius: 16px;
 }
+
+
 
 .hero-section .content svg {
     width: 24px;
@@ -282,15 +300,29 @@ margin-bottom: 16px;
 
 
 
+/*MEDIA QUERY*/
 
 
-
-
-
-
-
-
-
-@media screen and  (max-width: 768px) {
-    
+/* Extra large devices (large laptops and desktops, 1280px and up) */
+@media only screen and (min-width: 1280px) {
+    /*general*/
+    .container {
+        padding: 0 60px;
+    }
+    /*hero*/
+    .hero-section .container {
+        margin-top: 125px;
+    }
 }
+
+@media only screen and (min-width: 1050px) {
+    /*header*/
+    .header .nav .nav-links li:not(:last-of-type){
+        margin-right: 40px;
+    }
+    /*hero*/
+
+
+}
+
+
