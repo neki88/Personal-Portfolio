@@ -211,7 +211,12 @@ margin-bottom: 16px;
     cursor: pointer;
 }
 
-
+.header .mobile-menu-toggle {
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+    display: none;
+}
 /*MAIN*/
 
 
@@ -344,6 +349,10 @@ margin-bottom: 16px;
         border-bottom: 1px solid var(--light-2);
     }
 
+    .header .mobile-menu-toggle {
+        display: block;
+    }
+
     .header .nav .nav-links {
         display: initial;
         position: absolute;
@@ -355,6 +364,10 @@ margin-bottom: 16px;
         line-height: 32px;
         width: 170px;
         border-radius: 0 0 4px 4px ;
+    }
+
+    .header .right-content .download-resume {
+        display: none;
     }
 }
 
