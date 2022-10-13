@@ -364,6 +364,16 @@ margin-bottom: 16px;
         line-height: 32px;
         width: 170px;
         border-radius: 0 0 4px 4px ;
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+        transition: visibility, opacity .3s;
+    }
+
+    .header .nav .nav-links.active {
+        visibility: visible;
+        opacity: 1;
+        height: auto;
     }
 
     .header .right-content .download-resume {
@@ -371,3 +381,16 @@ margin-bottom: 16px;
     }
 }
 
+@media only screen and (max-width: 992px) {
+    /*header*/
+    .header {
+        margin-top: 0;
+    }
+
+    .header .nav .nav-links {
+        width: 100%;
+        right: 0;
+        line-height: 40px;
+        
+    }
+}
